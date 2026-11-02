@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Progress+</title>
+  <meta name="description" content="Apunta tus videojuegos: jugando, pendientes, en pausa, terminados y abandonados.">
+  <meta name="theme-color" content="#3DDC97">
+
+  <!-- Instalación como app -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <!-- Tipografías: Chakra Petch (títulos) y Manrope (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Manrope:wght@400..800&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- app.js pinta aquí todas las pantallas -->
+  <div id="app"></div>
+
+  <!-- Mensaje temporal con "Deshacer" -->
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+  <!-- Selector de archivo para importar una copia (está oculto) -->
+  <input type="file" id="archivo-copia" accept=".json,application/json" hidden>
+
+  <noscript>Progress+ necesita JavaScript para funcionar.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>
