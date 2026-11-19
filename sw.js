@@ -6,7 +6,7 @@
    - Tipografías: se usa la copia guardada, porque no cambian nunca.
    ===================================================================== */
 
-const CACHE = 'progress-plus-v1';
+const CACHE = 'progress-plus-v2';
 
 const ARCHIVOS = [
   './',
